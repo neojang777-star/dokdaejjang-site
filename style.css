@@ -133,3 +133,6 @@ footer p{margin:0 0 6px}
 
 .crumb{font-size:14px;color:var(--sub);margin-bottom:16px}
 .crumb a{text-decoration:none}
+.schools li.has-page{border-color:var(--onggi);background:var(--onggi)}
+.schools li.has-page a{color:#fff;text-decoration:none;font-weight:700}
+.schools li.has-page a:hover{text-decoration:underline}
