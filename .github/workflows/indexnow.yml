@@ -1,0 +1,18 @@
+name: IndexNow
+on:
+  push:
+    branches: [main]
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for Vercel deploy
+        run: sleep 120
+      - name: Notify search engines
+        run: |
+          URLS=$(curl -s https://dokdaejjang.kr/sitemap.xml | grep -o '<loc>[^<]*</loc>' | sed -e 's/<loc>//' -e 's/<\/loc>//' | sed 's/.*/"&"/' | paste -sd, -)
+          echo "URLs: $URLS"
+          curl -s -X POST https://api.indexnow.org/indexnow \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d "{\"host\":\"dokdaejjang.kr\",\"key\":\"06c0e1c04e717293482b9be92d792e2b\",\"keyLocation\":\"https://dokdaejjang.kr/06c0e1c04e717293482b9be92d792e2b.txt\",\"urlList\":[$URLS]}" \
+            -w "\nHTTP %{http_code}\n"
