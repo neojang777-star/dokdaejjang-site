@@ -136,3 +136,18 @@ footer p{margin:0 0 6px}
 .schools li.has-page{border-color:var(--onggi);background:var(--onggi)}
 .schools li.has-page a{color:#fff;text-decoration:none;font-weight:700}
 .schools li.has-page a:hover{text-decoration:underline}
+
+/* brand logo */
+.top .wrap{height:72px}
+.brand img{height:46px;width:auto;display:block}
+@media(max-width:600px){.brand img{height:38px}}
+@media(max-width:1000px){.top nav{gap:16px;font-size:14px}}
+/* about */
+.story p{font-size:17px}
+.letter{max-width:720px}
+.letter p{font-size:17px;line-height:1.9;margin-bottom:1.2em}
+.letter .sign{text-align:right;font-family:var(--serif);font-size:20px;font-weight:700;margin-top:28px}
+.quote{border-left:4px solid var(--onggi);padding:4px 0 4px 20px;margin:24px 0;font-family:var(--serif);font-size:22px;font-weight:700;line-height:1.5}
+.more{display:inline-block;margin-top:8px;font-weight:700;color:var(--onggi);text-decoration:none}
+.more:hover{text-decoration:underline}
+.director .more{color:#F2A170}

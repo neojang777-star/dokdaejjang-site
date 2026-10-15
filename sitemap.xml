@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://dokdaejjang.kr/</loc><lastmod>2026-10-02</lastmod></url>
+  <url><loc>https://dokdaejjang.kr/</loc><lastmod>2026-10-15</lastmod></url>
   <url><loc>https://dokdaejjang.kr/sajik/</loc><lastmod>2026-10-02</lastmod></url>
   <url><loc>https://dokdaejjang.kr/myeongji/</loc><lastmod>2026-10-02</lastmod></url>
   <url><loc>https://dokdaejjang.kr/school/geoseong/</loc><lastmod>2026-10-02</lastmod></url>
@@ -12,4 +12,5 @@
   <url><loc>https://dokdaejjang.kr/school/dongnaego/</loc><lastmod>2026-10-14</lastmod></url>
   <url><loc>https://dokdaejjang.kr/school/yeomyeong/</loc><lastmod>2026-10-14</lastmod></url>
   <url><loc>https://dokdaejjang.kr/school/sajikgo/</loc><lastmod>2026-10-15</lastmod></url>
+  <url><loc>https://dokdaejjang.kr/about/</loc><lastmod>2026-10-15</lastmod></url>
 </urlset>
