@@ -29,8 +29,8 @@
 ## 교습비
 - 초등: 월 18만 원
 - 중등: 월 23만 원
-- 고등A: 월 25만 원
-- 고등B: 월 30만 원
+- 고등A: 월 30만 원
+- 고등B: 월 35만 원
 
 ## 학교별 시험 분석
 - 거성중 (교과서 미래엔 민병곤) 국어 2026학년도 2학기 중간고사(9월 28일) 분석: https://dokdaejjang.kr/school/geoseong/
@@ -40,8 +40,9 @@
 - 사직여중 1·2학년 (교과서 천재 노미숙) 국어 2026학년도 2학기 중간고사(10월 12일) 분석: https://dokdaejjang.kr/school/sajikyeojung/
 - 사직여고 1학년 (교과서 미래엔 신유식) 국어 2026학년도 2학기 중간고사(10월 12일) 분석: https://dokdaejjang.kr/school/sajikyeogo/
 - 동래고 1학년 (교과서 미래엔 신유식 공통국어2) 국어 2026학년도 2학기 중간고사(10월 14일) 분석: https://dokdaejjang.kr/school/dongnaego/
-- 여명중 1학년 (교과서 천재 노미숙) 국어 2026학년도 2학기 중간고사(10월 6일) 분석: https://dokdaejjang.kr/school/yeomyeong/
+- 여명중 1·2학년 (교과서 천재 노미숙) 국어 2026학년도 2학기 중간고사(10월 6일) 분석: https://dokdaejjang.kr/school/yeomyeong/
 - 사직고 1학년 (교과서 비상 강호영) 국어 2026학년도 2학기 중간고사(10월 13일) 분석: https://dokdaejjang.kr/school/sajikgo/
+- 중앙여고 1학년 국어(교과서 창비)·2학년 독서와 작문(비상) 2026학년도 2학기 중간고사(10월 8일) 분석: https://dokdaejjang.kr/school/jungangyeogo/
 
 ## 대표원장
 - 장양우: 장독대국어 16년차, 부산일보 수능 해설위원, 전 서전학원 국어과 총책임자
