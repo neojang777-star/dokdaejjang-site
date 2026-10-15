@@ -1,0 +1,172 @@
+[
+ {
+  "slug": "2026-10-sajik-seminar",
+  "date": "2026-10-15",
+  "category": "설명회",
+  "title": "사직점 예비고1 세미나 (10월 21일)",
+  "summary": "고등 교육과정, 사직동 인근 고등학교 정보, 최근 입시 트렌드, 장독대만의 관리 시스템을 한 자리에서 안내합니다. 10월 21일(수) 저녁 7시, 사직점 2층 발효실.",
+  "facts": [
+   [
+    "일시",
+    "2026년 10월 21일(수) 오후 7시"
+   ],
+   [
+    "장소",
+    "장독대국어논술학원 사직점 2층 발효실 (연제구 종합운동장로 26, 대운빌딩 2층)"
+   ],
+   [
+    "대상",
+    "예비 고1 학생과 학부모"
+   ],
+   [
+    "신청",
+    "네이버 폼 또는 전화 051-504-3578"
+   ]
+  ],
+  "body": [
+   "고등학교 진학을 앞둔 예비 고1 학생과 학부모님을 위한 세미나입니다. 궁금한 모든 것을 한 자리에서 확인하세요.",
+   "이번 세미나에서는 전반적인 고등 교육과정, 사직동 인근 고등학교 정보, 최근 입시 트렌드 분석, 그리고 장독대만의 철저한 관리 시스템을 안내해 드립니다.",
+   "참석을 원하시면 위의 네이버 폼으로 신청하시거나 사직점(051-504-3578)으로 전화 주세요."
+  ],
+  "image": "poster.webp",
+  "cta": "<div class=\"cta\"><a class=\"btn solid\" href=\"https://m.site.naver.com/2ih6C\" rel=\"noopener\">네이버 폼으로 신청하기</a><a class=\"btn\" href=\"tel:0515043578\">전화 신청 051-504-3578</a></div>",
+  "event": {
+   "@type": "Event",
+   "name": "장독대 예비고1 세미나 (사직점)",
+   "startDate": "2026-10-21T19:00:00+09:00",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "location": {
+    "@type": "Place",
+    "name": "장독대국어논술학원 사직점 2층 발효실",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "종합운동장로 26, 대운빌딩 2층",
+     "addressLocality": "연제구",
+     "addressRegion": "부산광역시",
+     "addressCountry": "KR"
+    }
+   },
+   "organizer": {
+    "@type": "EducationalOrganization",
+    "name": "장독대국어논술학원",
+    "url": "https://dokdaejjang.kr/"
+   },
+   "offers": {
+    "@type": "Offer",
+    "url": "https://m.site.naver.com/2ih6C",
+    "price": "0",
+    "priceCurrency": "KRW",
+    "availability": "https://schema.org/InStock"
+   },
+   "audience": {
+    "@type": "EducationalAudience",
+    "educationalRole": "parent"
+   }
+  }
+ },
+ {
+  "slug": "2026-10-myeongji-seminar",
+  "date": "2026-10-15",
+  "category": "설명회",
+  "title": "명지점 예비고1 학부모 세미나 (10월 22일·23일)",
+  "summary": "명지 인근 고등학교 분석, 최신 입시 트렌드, 장독대만의 시스템과 노하우를 안내합니다. 1차 10월 22일(목) 오전 10시, 2차 10월 23일(금) 저녁 7시, 명지점.",
+  "facts": [
+   [
+    "1차",
+    "2026년 10월 22일(목) 오전 10시"
+   ],
+   [
+    "2차",
+    "2026년 10월 23일(금) 오후 7시"
+   ],
+   [
+    "장소",
+    "장독대국어논술학원 명지점 (강서구 명지국제8로 271, 문힐파크타워 8층)"
+   ],
+   [
+    "대상",
+    "예비 고1 학부모"
+   ],
+   [
+    "신청",
+    "네이버 폼 또는 전화 051-207-3578"
+   ]
+  ],
+  "body": [
+   "장독대와 한 걸음 먼저 준비하는 고등 교육과정. 예비 고1 학부모님을 위한 세미나입니다.",
+   "명지 인근 고등학교 분석, 최신 입시 트렌드, 장독대만의 시스템과 노하우를 안내해 드립니다. 같은 내용으로 두 번 진행하니 편한 시간을 골라 참석하세요.",
+   "참석을 원하시면 위의 네이버 폼으로 신청하시거나 명지점(051-207-3578)으로 전화 주세요."
+  ],
+  "image": "poster.webp",
+  "cta": "<div class=\"cta\"><a class=\"btn solid\" href=\"https://m.site.naver.com/2ihdr\" rel=\"noopener\">네이버 폼으로 신청하기</a><a class=\"btn\" href=\"tel:0512073578\">전화 신청 051-207-3578</a></div>",
+  "event": {
+   "@type": "Event",
+   "name": "장독대 예비고1 학부모 세미나 1차 (명지점)",
+   "startDate": "2026-10-22T10:00:00+09:00",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "location": {
+    "@type": "Place",
+    "name": "장독대국어논술학원 명지점",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "명지국제8로 271, 문힐파크타워 8층",
+     "addressLocality": "강서구",
+     "addressRegion": "부산광역시",
+     "addressCountry": "KR"
+    }
+   },
+   "organizer": {
+    "@type": "EducationalOrganization",
+    "name": "장독대국어논술학원",
+    "url": "https://dokdaejjang.kr/"
+   },
+   "offers": {
+    "@type": "Offer",
+    "url": "https://m.site.naver.com/2ihdr",
+    "price": "0",
+    "priceCurrency": "KRW",
+    "availability": "https://schema.org/InStock"
+   },
+   "audience": {
+    "@type": "EducationalAudience",
+    "educationalRole": "parent"
+   }
+  },
+  "event2": {
+   "@type": "Event",
+   "name": "장독대 예비고1 학부모 세미나 2차 (명지점)",
+   "startDate": "2026-10-23T19:00:00+09:00",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "location": {
+    "@type": "Place",
+    "name": "장독대국어논술학원 명지점",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "명지국제8로 271, 문힐파크타워 8층",
+     "addressLocality": "강서구",
+     "addressRegion": "부산광역시",
+     "addressCountry": "KR"
+    }
+   },
+   "organizer": {
+    "@type": "EducationalOrganization",
+    "name": "장독대국어논술학원",
+    "url": "https://dokdaejjang.kr/"
+   },
+   "offers": {
+    "@type": "Offer",
+    "url": "https://m.site.naver.com/2ihdr",
+    "price": "0",
+    "priceCurrency": "KRW",
+    "availability": "https://schema.org/InStock"
+   },
+   "audience": {
+    "@type": "EducationalAudience",
+    "educationalRole": "parent"
+   }
+  }
+ }
+]
