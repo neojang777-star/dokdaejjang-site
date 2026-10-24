@@ -1,5 +1,7 @@
 """news/news.json으로 학원 소식 목록·개별 페이지와 메인 페이지 소식 영역을 만듭니다."""
 import json, re, html, os, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from feed_render import render_all
 ROOT = sys.argv[1] if len(sys.argv) > 1 else "."
 SITE = "https://dokdaejjang.kr"; NAME = "장독대국어논술학원"
 START, END = "<!--NEWS:START-->", "<!--NEWS:END-->"
@@ -21,14 +23,15 @@ def card(n):
             f'<b>{html.escape(n["title"])}</b><span class="desc">{html.escape(n["summary"])}</span></a></li>')
 EMPTY = '<p class="empty">새 소식을 준비하고 있습니다.</p>'
 # list page
-lst = "<ul class=\"feed\">" + "".join(card(n) for n in news) + "</ul>" if news else EMPTY
+lst = "<!--NEWS:START--><!--NEWS:END-->"
 ld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": f"학원 소식 | {NAME}", "url": SITE + "/news/"}
 body = f'''
 <div class="hero"><div class="wrap" style="grid-template-columns:1fr"><div>
 <p class="crumb"><a href="/">{NAME}</a> / 학원 소식</p>
 <h1 class="slogan" style="font-size:clamp(32px,4.6vw,54px)">학원 소식</h1>
-<p class="lead">설명회, 개강, 특강 등 장독대국어논술학원의 새 소식을 알려 드립니다.</p></div></div></div>
-<section><div class="wrap">{lst}</div></section>
+<p class="lead">설명회, 개강, 특강 등 장독대국어논술학원의 새 소식과 블로그 최신 글을 한곳에서 보실 수 있습니다.</p></div></div></div>
+<section><div class="wrap"><h2>학원 소식</h2>{lst}</div></section>
+<section class="alt"><div class="wrap"><h2>블로그 최신 글</h2><!--BLOG:START--><!--BLOG:END--><a class="more" href="https://blog.naver.com/dokdaejjang" rel="noopener">네이버 블로그 바로가기</a></div></section>
 '''
 os.makedirs(f"{ROOT}/news", exist_ok=True)
 open(f"{ROOT}/news/index.html", "w", encoding="utf-8").write(head(f"학원 소식 | {NAME}", "장독대국어논술학원 사직점·명지점의 설명회, 개강, 특강 소식입니다.", "/news/", ld) + body + FOOT)
@@ -56,15 +59,10 @@ for n in news:
 '''
     os.makedirs(f"{ROOT}/news/{n['slug']}", exist_ok=True)
     open(f"{ROOT}/news/{n['slug']}/index.html", "w", encoding="utf-8").write(head(f"{n['title']} | {NAME}", n["summary"], f"/news/{n['slug']}/", ld) + body + FOOT)
-# home block
-home = f"{ROOT}/index.html"; s = open(home, encoding="utf-8").read()
-block = ("<ul class=\"feed\">" + "".join(card(n) for n in news[:3]) + "</ul>") if news else EMPTY
-s = re.sub(re.escape(START) + ".*?" + re.escape(END), START + block + END, s, flags=re.S)
-open(home, "w", encoding="utf-8").write(s)
 # sitemap
 sm = f"{ROOT}/sitemap.xml"; x = open(sm, encoding="utf-8").read()
 x = re.sub(r'  <url><loc>https://dokdaejjang.kr/news/[^<]*</loc>.*?</url>\n', "", x)
 add = f"  <url><loc>{SITE}/news/</loc><lastmod>{news[0]['date'] if news else '2026-10-15'}</lastmod></url>\n" + "".join(
     f"  <url><loc>{SITE}/news/{n['slug']}/</loc><lastmod>{n['date']}</lastmod></url>\n" for n in news)
 x = x.replace("</urlset>", add + "</urlset>"); open(sm, "w", encoding="utf-8").write(x)
-print("news:", len(news))
+print("news:", len(news), "render:", render_all(ROOT))

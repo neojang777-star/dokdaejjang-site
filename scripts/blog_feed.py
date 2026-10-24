@@ -1,12 +1,12 @@
-"""네이버 블로그 RSS를 읽어 index.html의 '블로그 최신 글' 영역을 갱신합니다.
+"""네이버 블로그 RSS를 읽어 data/blog.json에 저장하고, 메인·소식 페이지의 목록을 갱신합니다.
 GitHub Actions에서 하루 한 번 실행됩니다. 외부 라이브러리 없이 동작합니다."""
-import re, sys, html, urllib.request, xml.etree.ElementTree as ET
+import re, sys, os, json, html, urllib.request, xml.etree.ElementTree as ET
 from email.utils import parsedate_to_datetime
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from feed_render import render_all
 
 RSS = "https://rss.blog.naver.com/dokdaejjang.xml"
-BLOG = "https://blog.naver.com/dokdaejjang"
-COUNT = 3
-START, END = "<!--BLOG:START-->", "<!--BLOG:END-->"
+KEEP = 20
 
 def fetch(url):
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (dokdaejjang.kr blog feed)"})
@@ -15,53 +15,31 @@ def fetch(url):
 
 def clean(text, limit):
     text = re.sub(r"<[^>]+>", " ", text or "")
-    text = html.unescape(text)
-    text = re.sub(r"\s+", " ", text).strip()
+    text = re.sub(r"\s+", " ", html.unescape(text)).strip()
     return text if len(text) <= limit else text[:limit].rstrip() + "…"
 
 def parse(xml_bytes):
-    root = ET.fromstring(xml_bytes)
     items = []
-    for it in root.iter("item"):
+    for it in ET.fromstring(xml_bytes).iter("item"):
         title = clean(it.findtext("title"), 60)
         link = (it.findtext("link") or "").strip().split("?")[0]
         desc = clean(it.findtext("description"), 90)
-        date = ""
-        try:
-            date = parsedate_to_datetime(it.findtext("pubDate")).strftime("%Y.%m.%d")
-        except Exception:
-            pass
+        try: d = parsedate_to_datetime(it.findtext("pubDate")).strftime("%Y.%m.%d")
+        except Exception: d = ""
         if title and link.startswith("https://blog.naver.com/"):
-            items.append({"title": title, "link": link, "desc": desc, "date": date})
-    return items[:COUNT]
+            items.append({"title": title, "link": link, "desc": desc, "date": d})
+    return items[:KEEP]
 
-def render(items):
-    if not items:
-        return '<p class="empty">블로그 글을 불러오는 중입니다.</p>'
-    cards = "".join(
-        f'<li><a href="{html.escape(i["link"])}" rel="noopener"><span class="date">{i["date"]}</span>'
-        f'<b>{html.escape(i["title"])}</b>'
-        + (f'<span class="desc">{html.escape(i["desc"])}</span>' if i["desc"] else "")
-        + "</a></li>"
-        for i in items)
-    return f'<ul class="feed">{cards}</ul>'
-
-def main(path="index.html"):
+def main(index_path="index.html"):
+    root = os.path.dirname(os.path.abspath(index_path))
     try:
         items = parse(fetch(RSS))
+        if items:
+            json.dump(items, open(f"{root}/data/blog.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+            print("블로그 글:", [i["title"] for i in items[:5]])
     except Exception as e:
-        print("RSS 읽기 실패:", e)
-        return 0  # 실패해도 기존 목록 유지
-    page = open(path, encoding="utf-8").read()
-    if START not in page:
-        print("표시 영역을 찾지 못했습니다.")
-        return 1
-    new = re.sub(re.escape(START) + ".*?" + re.escape(END), START + render(items) + END, page, flags=re.S)
-    if new != page:
-        open(path, "w", encoding="utf-8").write(new)
-        print("갱신:", [i["title"] for i in items])
-    else:
-        print("변경 없음")
+        print("RSS 읽기 실패, 기존 목록 유지:", e)
+    print("갱신된 파일:", render_all(root) or "없음")
     return 0
 
 if __name__ == "__main__":

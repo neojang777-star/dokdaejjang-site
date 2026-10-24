@@ -63,7 +63,8 @@
     "@type": "EducationalAudience",
     "educationalRole": "parent"
    }
-  }
+  },
+  "blog": "https://blog.naver.com/dokdaejjang/224436404720"
  },
  {
   "slug": "2026-10-myeongji-seminar",
@@ -167,6 +168,7 @@
     "@type": "EducationalAudience",
     "educationalRole": "parent"
    }
-  }
+  },
+  "blog": "https://blog.naver.com/dokdaejjang/224436404720"
  }
 ]
