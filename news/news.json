@@ -64,7 +64,8 @@
     "educationalRole": "parent"
    }
   },
-  "blog": "https://blog.naver.com/dokdaejjang/224436404720"
+  "blog": "https://blog.naver.com/dokdaejjang/224436404720",
+  "end": "2026-10-21"
  },
  {
   "slug": "2026-10-myeongji-seminar",
@@ -169,7 +170,8 @@
     "educationalRole": "parent"
    }
   },
-  "blog": "https://blog.naver.com/dokdaejjang/224436404720"
+  "blog": "https://blog.naver.com/dokdaejjang/224436404720",
+  "end": "2026-10-23"
  },
  {
   "slug": "2026-10-myeongji-js-class",
@@ -258,6 +260,7 @@
     "availability": "https://schema.org/InStock",
     "validFrom": "2026-10-28T00:00:00+09:00"
    }
-  }
+  },
+  "end": "2026-11-06"
  }
 ]

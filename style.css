@@ -170,3 +170,19 @@ h2{letter-spacing:-.005em}
 .poster{margin:0}.poster img{width:100%;border:1px solid var(--line)}
 @media(max-width:820px){.newsbody{grid-template-columns:1fr}}
 .newsbody .scroll{margin-bottom:24px}
+
+/* notices */
+.notices{list-style:none;margin:0 0 16px;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.notices li a{display:flex;flex-direction:column;height:100%;text-decoration:none;border:1px solid var(--line);background:var(--paper)}
+.notices li a:hover{border-color:var(--onggi)}
+.notices img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:top;border-bottom:1px solid var(--line)}
+.notices li a>div{padding:14px 16px 18px}
+.notices .date{display:block;font-size:14px;color:var(--sub);margin-bottom:6px}
+.notices b{display:block;font-size:18px;line-height:1.4}
+.notices .desc{font-size:14px;color:var(--sub);margin-top:6px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.badge{display:inline-block;font-size:12px;font-weight:700;color:#fff;background:var(--onggi);padding:1px 8px;margin-right:8px;vertical-align:1px}
+.badge.closed{background:#9a9a96}
+.notices .is-closed a{opacity:.7}
+@media(max-width:820px){.notices{grid-template-columns:1fr}}
+.top nav{gap:18px}
+@media(max-width:1100px){.top nav{gap:12px;font-size:14px}}
