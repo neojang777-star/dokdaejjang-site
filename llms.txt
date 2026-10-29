@@ -35,7 +35,6 @@
 ## 학교별 시험 분석
 - 거성중 (교과서 미래엔 민병곤) 국어 2026학년도 2학기 중간고사(9월 28일) 분석: https://dokdaejjang.kr/school/geoseong/
 - 온천중 1·2학년 (교과서 미래엔 민병곤) 국어 2026학년도 2학기 중간고사(10월 2일) 분석: https://dokdaejjang.kr/school/oncheon/
-- 사직중 1학년 (교과서 비상 박현숙) 국어 2026학년도 2학기 중간고사(10월 1일) 분석: https://dokdaejjang.kr/school/sajikjung/
 - 사직여중 1·2학년 (교과서 천재 노미숙) 국어 2026학년도 2학기 중간고사(10월 12일) 분석: https://dokdaejjang.kr/school/sajikyeojung/
 - 동래고 1학년 (교과서 미래엔 신유식 공통국어2) 국어 2026학년도 2학기 중간고사(10월 14일) 분석: https://dokdaejjang.kr/school/dongnaego/
 - 중앙여고 1학년 국어(교과서 창비)·2학년 독서와 작문(비상) 2026학년도 2학기 중간고사(10월 8일) 분석: https://dokdaejjang.kr/school/jungangyeogo/
@@ -49,8 +48,12 @@
 - 사직고 1학년 국어(교과서 비상 강호영, 10월 13일)·2학년 화법과 언어(미래엔 민병곤) 2026학년도 2학기 중간고사 분석: https://dokdaejjang.kr/school/sajikgo/
 - 여명중 1·2학년 중간고사(10월 6일, 교과서 천재 노미숙)·3학년 기말고사(10월 22일, 천재 박영목) 국어 2026학년도 2학기 분석: https://dokdaejjang.kr/school/yeomyeong/
 - 명지중 2학년(교과서 비상 박현숙)·3학년(비상) 국어 2026학년도 2학기 중간고사(10월 19일) 분석: https://dokdaejjang.kr/school/myeongjijung/
-- 경일중 2학년 (교과서 천재 노미숙) 국어 2026학년도 2학기 중간고사(10월 20일) 분석: https://dokdaejjang.kr/school/gyeongiljung/
 - 명호중 1학년(10월 19일)·2학년(10월 20일) (교과서 천재 노미숙) 국어 2026학년도 2학기 중간고사 분석: https://dokdaejjang.kr/school/myeonghojung/
+- 사직중 1학년(비상 박현숙, 2학기 중간)·3학년(천재 노미숙, 2학기 기말 10월 29일) 국어 시험 분석: https://dokdaejjang.kr/school/sajikjung/
+- 경일중 1·2학년 (교과서 천재 노미숙) 국어 2026학년도 2학기 중간고사(10월 20일) 분석: https://dokdaejjang.kr/school/gyeongiljung/
+- 거제여중 2학년 (교과서 천재 노미숙) 국어 2026학년도 2학기 중간고사(10월 27일) 분석: https://dokdaejjang.kr/school/geojeyeojung/
+- 이사벨중 1·2학년 (교과서 비상 박현숙) 국어 2026학년도 2학기 중간고사(10월 27일) 분석: https://dokdaejjang.kr/school/isabeljung/
+- 유락여중 3학년 (교과서 천재 박영목) 국어 2026학년도 2학기 고사(10월 28일) 분석: https://dokdaejjang.kr/school/yurakyeojung/
 
 ## 대표원장
 - 장양우: 장독대국어 16년차, 부산일보 수능 해설위원, 전 서전학원 국어과 총책임자
