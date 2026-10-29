@@ -262,5 +262,133 @@
    }
   },
   "end": "2026-11-06"
+ },
+ {
+  "slug": "2026-11-myeongji-pre-hs1",
+  "date": "2026-10-29",
+  "category": "개강",
+  "title": "명지점 예비고1 개강 (11월 7일·8일)",
+  "summary": "16주차로 완성하는 고등 국어. 명지점 예비고1 과정이 11월 7일(토)·8일(일)에 개강합니다. 모집 기간 10월 28일~11월 6일, 수업 시간 문의 051-207-3578.",
+  "facts": [
+   [
+    "과정",
+    "16주차로 완성하는 고등 국어"
+   ],
+   [
+    "대상",
+    "예비 고1"
+   ],
+   [
+    "개강",
+    "2026년 11월 7일(토) / 11월 8일(일)"
+   ],
+   [
+    "모집 기간",
+    "10월 28일(수) ~ 11월 6일(금)"
+   ],
+   [
+    "장소",
+    "장독대국어논술학원 명지점 (강서구 명지국제8로 271, 문힐파크타워 8층)"
+   ],
+   [
+    "문의",
+    "051-207-3578 (수업 시간 문의)"
+   ]
+  ],
+  "body": [
+   "장독대국어논술학원 명지점의 예비고1 과정이 개강합니다. 16주 동안 고등 국어를 완성하는 과정입니다.",
+   "개강일은 2026년 11월 7일(토)과 11월 8일(일)입니다. 본수업은 토·일 중 하루, 주 1회 3시간 연강으로 진행합니다.",
+   "모집 기간은 10월 28일(수)부터 11월 6일(금)까지입니다. 수업 시간은 명지점(051-207-3578)으로 문의해 주세요."
+  ],
+  "image": "poster.webp",
+  "cta": "<div class=\"cta\"><a class=\"btn solid\" href=\"tel:0512073578\">수업 시간 문의 051-207-3578</a></div>",
+  "event": {
+   "@type": "Event",
+   "name": "장독대 예비고1 개강 (명지점)",
+   "startDate": "2026-11-07T10:00:00+09:00",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "location": {
+    "@type": "Place",
+    "name": "장독대국어논술학원 명지점",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "명지국제8로 271, 문힐파크타워 8층",
+     "addressLocality": "강서구",
+     "addressRegion": "부산광역시",
+     "addressCountry": "KR"
+    }
+   },
+   "organizer": {
+    "@type": "EducationalOrganization",
+    "name": "장독대국어논술학원",
+    "url": "https://dokdaejjang.kr/"
+   }
+  },
+  "end": "2026-11-06"
+ },
+ {
+  "slug": "2026-11-sajik-pre-hs1",
+  "date": "2026-10-29",
+  "category": "개강",
+  "title": "사직점 예비고1 개강 (11월 7일·8일)",
+  "summary": "16주차로 완성하는 고등 국어. 사직점 예비고1 과정이 11월 7일(토)·8일(일)에 개강합니다. 모집 기간 10월 28일~11월 6일, 수업 시간 문의 051-504-3578.",
+  "facts": [
+   [
+    "과정",
+    "16주차로 완성하는 고등 국어"
+   ],
+   [
+    "대상",
+    "예비 고1"
+   ],
+   [
+    "개강",
+    "2026년 11월 7일(토) / 11월 8일(일)"
+   ],
+   [
+    "모집 기간",
+    "10월 28일(수) ~ 11월 6일(금)"
+   ],
+   [
+    "장소",
+    "장독대국어논술학원 사직점 (연제구 종합운동장로 26, 대운빌딩 2층·8층)"
+   ],
+   [
+    "문의",
+    "051-504-3578 (수업 시간 문의)"
+   ]
+  ],
+  "body": [
+   "장독대국어논술학원 사직점의 예비고1 과정이 개강합니다. 16주 동안 고등 국어를 완성하는 과정입니다.",
+   "개강일은 2026년 11월 7일(토)과 11월 8일(일)입니다. 본수업은 토·일 중 하루, 주 1회 3시간 연강으로 진행합니다.",
+   "모집 기간은 10월 28일(수)부터 11월 6일(금)까지입니다. 수업 시간은 사직점(051-504-3578)으로 문의해 주세요."
+  ],
+  "image": "poster.webp",
+  "cta": "<div class=\"cta\"><a class=\"btn solid\" href=\"tel:0515043578\">수업 시간 문의 051-504-3578</a></div>",
+  "event": {
+   "@type": "Event",
+   "name": "장독대 예비고1 개강 (사직점)",
+   "startDate": "2026-11-07T10:00:00+09:00",
+   "eventStatus": "https://schema.org/EventScheduled",
+   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+   "location": {
+    "@type": "Place",
+    "name": "장독대국어논술학원 사직점",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "종합운동장로 26, 대운빌딩 2층·8층",
+     "addressLocality": "연제구",
+     "addressRegion": "부산광역시",
+     "addressCountry": "KR"
+    }
+   },
+   "organizer": {
+    "@type": "EducationalOrganization",
+    "name": "장독대국어논술학원",
+    "url": "https://dokdaejjang.kr/"
+   }
+  },
+  "end": "2026-11-06"
  }
 ]
